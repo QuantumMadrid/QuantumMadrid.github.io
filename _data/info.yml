@@ -1,0 +1,37 @@
+# Event name
+name: Hackathon Cuántico Madrid
+
+# Event date, in free-text format
+date: 22, 23 y 24 de Octubre
+
+# Event location
+location: Facultad de ciencias de la UAM
+
+
+# Event description; short is for e.g. Facebook shared links, long appears on the home page.
+description_short: evento organizado por @QuantumMadrid
+description_long: |-
+  El Hackathon Cuántico Madrid es un evento organizado por @QuantumMadrid
+  con motivo del Qiskit Fall Fest y el hacktoberfest
+  Esperemos que sea una inmersión de fin de semana donde perfiles distintos
+  como investigadores, programadores y diseñadores sean capaces de 
+  adentrarse en el mundo de la cuantica o realizar un prototipo.
+
+
+# Contact email. Use a bot-defeating format, otherwise you'll get spammed.
+email: quantumcomputingmadrid@gmail.com
+
+# Social networks. Twitter is optional, but you really should have a Facebook page.
+facebook: ???
+twitter: QuantumMadrid
+
+# Accent color of the website
+color: '#6497b1'
+
+# Font used by the website.
+# To use a custom font, see the ReadMe file.
+# If using a custom font, this value will be used as fallback.
+font: Courier, monospace
+
+# Links to past editions
+past_editions:
