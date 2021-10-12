@@ -12,16 +12,16 @@ group:
 # People organizing the event, and their websites.
 # See the ReadMe file for information on pictures.
 people:
-  - first: David
-    last: Morcuende
+  - first: Pablo
+    last: Bastante
     link: http://example.org
   
   - first: Esperanza
     last: Cuenca
     link: http://example.org
 
-  - first: Pablo
-    last: Bastante
+  - first: David
+    last: Morcuende
     link: http://example.org
 
   - first: Sonia
@@ -30,4 +30,8 @@ people:
 
   - first: Julen
     last: Barriga
+    link: http://example.org
+
+  - first: Carmen
+    last: Recio
     link: http://example.org
