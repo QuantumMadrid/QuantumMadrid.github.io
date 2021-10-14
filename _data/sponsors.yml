@@ -10,7 +10,7 @@ tiers:
   Partners:
     show_title: true
     color: rgba(212,175,55,0.12)
-    size: 10
+    size: 15
     sponsors:
       poli: https://www.upm.es/
       uam: https://uam.es/uam/inicio
@@ -20,3 +20,14 @@ tiers:
       csic: https://www.csic.es/es
       qsi: https://quantumstrategyinstitute.com/
       hacktoberfest: https://hacktoberfest.digitalocean.com/
+
+  Premios:
+    show_title: true
+    color: rgba(3, 252, 123, 0.12)
+    size: 25
+    sponsors:
+      pt: 
+      pg: 
+      pc: 
+      iqg: 
+      
