@@ -2,7 +2,7 @@
 # Don't forget quotes around hours, otherwise the colons will mess stuff up.
 # Use an empty string ('') for the day names if you do not want headers.
 
-Viernes:
+Viernes, en coworking espiritu 23:
   '18.00-18.30': Presentación & Tutorial
   '18.30-19.00': Exposición de ideas
   '19.00-19.30': Formación de equipos
@@ -16,8 +16,8 @@ Sábado:
   '11:30-12:00': "Quantum computing: current status and industrial applications"
   '12:00-14:30': Hack
   '14:30:-15:30': Comer
-  '18:30:-19:00': Charla
-  '19:00-21:00': Hack
+  '18:30:-19:00': "Qiskit Hackathon Europe: Nuestra experiencia"
+  '19:00-20:00': Hack
 
 Domingo:
   '09.00-10.00': Desayuno y final
