@@ -26,7 +26,7 @@ export default function Landing() {
 
       {/* Hero */}
       <section className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(15,98,254,0.25),rgba(0,0,0,0))]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(15,98,254,0.25),rgba(0,0,0,0))] pointer-events-none" />
         <div className="max-w-6xl mx-auto px-6 py-16 md:py-24">
           <div className="grid md:grid-cols-2 gap-10 items-center">
             <div>
@@ -155,7 +155,7 @@ export default function Landing() {
       </section>
 
       {/* Preinscripción */}
-      <section id="register" className="border-t border-white/10">
+      <section id="prizes" className="border-t border-white/10">
         <div className="max-w-6xl mx-auto px-6 py-14">
           <h2 className="text-2xl md:text-3xl font-bold">Premios</h2>
           <p className="mt-3 text-white/80 max-w-3xl">Qiskit Swagg </p>
@@ -181,7 +181,6 @@ export default function Landing() {
         <div className="max-w-6xl mx-auto px-6 py-14">
           <h2 className="text-2xl md:text-3xl font-bold">Organizan & Colaboran</h2>
           <div className="mt-6 grid grid-cols-2 md:grid-cols-4 gap-4">
-            {/* ['IBM Quantum','UPM','Quantum Madrid','QCentroid','ACM UPM','EY','CSIC','UC3M','Nebrija','UAM','Repsol','BBVA','Santander','Fujitsu','Multiverse','Global Data Quantum','Kipu Quantum','Qubiz','Tecnalia'] */}
             {['Quantum Madrid', 'UPM', 'QCentroid'].map((n)=> (
               <div key={n} className="rounded-2xl bg-white/5 border border-white/10 h-20 flex items-center justify-center text-white/80 text-sm">{n}</div>
             ))}
