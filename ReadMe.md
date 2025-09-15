@@ -24,3 +24,4 @@ npm run preview
 - `src/App.jsx` — punto de montaje de la landing.
 - `index.html` — título/meta tags, etc.
 - `src/index.css` — Tailwind y estilos globales.
+
