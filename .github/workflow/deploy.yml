@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ main ]   # o 'master' si tu rama por defecto es master
+    branches: [ master ]  
     paths:
       - 'index.html'
       - 'vite.config.js'
