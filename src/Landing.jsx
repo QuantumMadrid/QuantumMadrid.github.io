@@ -169,7 +169,7 @@ export default function Landing() {
           <h2 className="text-2xl md:text-3xl font-bold">Preinscripción</h2>
           <p className="mt-3 text-white/80 max-w-3xl">Indica si participas solo o en equipo y propone (opcional) un tema o problema. Usaremos esta info para ayudarte a formar equipo y a priorizar mentoría.</p>
           <div className="mt-6 flex flex-wrap gap-3">
-            <a className="rounded-2xl bg-[#0f62fe] px-5 py-3 font-semibold hover:bg-[#0043ce]" href="https://www.meetup.com/" target="_blank">Ir a la página de Meetup</a>
+            <a className="rounded-2xl bg-[#0f62fe] px-5 py-3 font-semibold hover:bg-[#0043ce]" href="https://www.meetup.com/es-ES/quantummadrid/events/311082827/" target="_blank">Ir a la página de Meetup</a>
             <a className="rounded-2xl border border-white/20 px-5 py-3 font-semibold hover:bg-white/5" href="#faq">FAQ</a>
           </div>
           <p className="mt-4 text-xs text-white/60">También anunciaremos actualizaciones en Discord y redes sociales.</p>
