@@ -181,7 +181,7 @@ export default function Landing() {
         <div className="max-w-6xl mx-auto px-6 py-14">
           <h2 className="text-2xl md:text-3xl font-bold">Organizan & Colaboran</h2>
           <div className="mt-6 grid grid-cols-2 md:grid-cols-4 gap-4">
-            {['Quantum Madrid', 'UPM', 'QCentroid', 'Univ nebrija', 'UCM', 'Qbiz.team'].map((n)=> (
+            {['Quantum Madrid', 'UPM', 'QCentroid', 'Univ nebrija', 'UCM', 'QUBIZ.team'].map((n)=> (
               <div key={n} className="rounded-2xl bg-white/5 border border-white/10 h-20 flex items-center justify-center text-white/80 text-sm">{n}</div>
             ))}
           </div>
