@@ -20,7 +20,7 @@ export default function Landing() {
             </div>
             <span className="ml-2 text-sm md:text-base font-medium tracking-wide">Qiskit Fall Fest — Madrid 2025</span>
           </div>
-          <a href="#register" className="rounded-2xl bg-white text-neutral-900 px-4 py-2 text-sm font-semibold hover:opacity-90">Register</a>
+          <a href="#register" className="rounded-2xl bg-white text-neutral-900 px-4 py-2 text-sm font-semibold hover:opacity-90">Registro</a>
         </div>
       </header>
 
@@ -34,8 +34,8 @@ export default function Landing() {
               <p className="mt-4 text-lg text-white/80 max-w-prose">Un fin de semana para aprender, construir y demostrar aplicaciones cuánticas reales con <strong>Qiskit</strong> y partners académicos e industriales. Keynotes, zona de trabajo, y stands. Abierto a principiantes y perfiles avanzados.</p>
               <ul className="mt-6 text-white/80 space-y-2">
                 <li>📅 <strong>7–9 de noviembre de 2025</strong> (vie–dom)</li>
-                <li>📍 <strong>UPM — CIU / DOMO UPM</strong> (pendiente de confirmación) </li>
-                
+                <li>📍 <strong>DOMO 360</strong> </li>
+                <li>📍<a href="https://maps.app.goo.gl/FbutC3XSLDbH1xSY9">Jardines Escuela de Ingenieros Agronomos, Domo360, Av. Puerta de Hierro, 2, 28040 Madrid, España </a> </li>
               </ul>
               <div className="mt-8 flex gap-3">
                 <a href="#register" className="rounded-2xl bg-[#0f62fe] px-5 py-3 font-semibold hover:bg-[#0043ce]">Apúntate</a>
@@ -154,12 +154,29 @@ export default function Landing() {
         </div>
       </section>
 
-      {/* Preinscripción */}
+      {/* Prizes & Certificates */}
       <section id="prizes" className="border-t border-white/10">
         <div className="max-w-6xl mx-auto px-6 py-14">
-          <h2 className="text-2xl md:text-3xl font-bold">Premios</h2>
-          <p className="mt-3 text-white/80 max-w-3xl">Qiskit Swagg </p>
-          <p className="mt-4 text-xs text-white/60">Se confirmaran los premios definitivos posteriormente.</p>
+          <h2 className="text-2xl md:text-3xl font-bold">Premios y Certificados</h2>
+            <p className="mt-3 text-white/80 max-w-3xl"></p>
+
+          
+          {/* Theme: Open track */}
+            <div className="rounded-3xl bg-white/5 border border-white/10 p-6">
+              <div className="text-sm text-white/60">🎁 Premios:</div>
+              <h3 className="mt-1 text-xl font-semibold">Qiskit Swagg y sorpresas cortesía de nuestros partners.</h3>
+            </div>
+           <p className="mt-3 text-white/80 max-w-3xl">
+             <span className="font-semibold"></span> 
+          </p>
+          <div className="rounded-3xl bg-white/5 border border-white/10 p-6">
+              <div className="text-sm text-white/60">📜 Certificados:</div>
+              <h3 className="mt-1 text-xl font-semibold"> Todos los participantes recibirán un certificado oficial de participación, y los equipos ganadores obtendrán un certificado especial firmado por <span className="font-semibold">IBM</span>.</h3>
+            </div>
+    
+          <p className="mt-4 text-xs text-white/60">
+            * Los premios y reconocimientos adicionales se confirmarán próximamente.
+          </p>
         </div>
       </section>
 
@@ -181,7 +198,7 @@ export default function Landing() {
         <div className="max-w-6xl mx-auto px-6 py-14">
           <h2 className="text-2xl md:text-3xl font-bold">Organizan & Colaboran</h2>
           <div className="mt-6 grid grid-cols-2 md:grid-cols-4 gap-4">
-            {['Quantum Madrid', 'UPM', 'QCentroid', 'Univ nebrija', 'UCM', 'QUBIZ.team'].map((n)=> (
+            {['Quantum Madrid', 'UPM', 'QCentroid', 'Univ nebrija', 'QUBIZ.team'].map((n)=> (
               <div key={n} className="rounded-2xl bg-white/5 border border-white/10 h-20 flex items-center justify-center text-white/80 text-sm">{n}</div>
             ))}
           </div>
