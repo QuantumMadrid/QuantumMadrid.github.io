@@ -75,34 +75,49 @@ export default function Landing() {
       {/* Agenda */}
       <section id="agenda" className="border-t border-white/10">
         <div className="max-w-6xl mx-auto px-6 py-14">
-          <h2 className="text-2xl md:text-3xl font-bold">Agenda (borrador)</h2>
+          <h2 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-fuchsia-400 via-violet-400 to-sky-400 bg-clip-text text-transparent">Agenda</h2>
           <div className="mt-6 grid md:grid-cols-3 gap-6">
-            <div className="rounded-3xl bg-white/5 border border-white/10 p-6">
-              <h3 className="font-semibold">Viernes 7 nov</h3>
+            <div className="rounded-3xl bg-white/5 border border-fuchsia-500/30 ring-1 ring-fuchsia-500/20 shadow-[0_0_30px_-10px_rgba(217,70,239,0.5)] p-6 transition hover:translate-y-0.5 hover:shadow-[0_0_40px_-10px_rgba(217,70,239,0.7)] backdrop-blur">
+              <h3 className="font-semibold text-fuchsia-300 flex items-center gap-2">Viernes 7 nov <span className="text-[10px] px-2 py-0.5 rounded-full bg-fuchsia-500/20 border border-fuchsia-500/30">Kickoff</span></h3>
               <ul className="mt-3 space-y-2 text-white/80 text-sm">
-                <li>• Registro & bienvenida</li>
-                <li>• Keynotes intro (Qiskit 101, proyectos)</li>
-                <li>• Formación de equipos & kick-off</li>
+                <li>👋 16:30-17:00 — Llegada y registro</li>
+                <li>17:00-17:15 — 🎤 Sesión de bienvenida</li>
+                <li>17:15-17:45 — 🎓 Keynote equipo UPM</li>
+                <li>17:45-18:15 — 💡 Keynote IBM</li>
+                <li>18:15-19:00 — 👥 Panel de universidades</li>
+                <li>19:00-19:30 — ☕ Café/refrescos bienvenida</li>
+                <li>19:30-20:00 — Sesión QCentroid</li>
+                <li>20:00-20:30 — Sesión Qubiz.team</li>
+                <li>20:30-21:00 — Configuración equipos y cierre</li>
               </ul>
             </div>
-            <div className="rounded-3xl bg-white/5 border border-white/10 p-6">
-              <h3 className="font-semibold">Sábado 8 nov</h3>
+            <div className="rounded-3xl bg-white/5 border border-sky-500/30 ring-1 ring-sky-500/20 shadow-[0_0_30px_-10px_rgba(14,165,233,0.5)] p-6 transition hover:translate-y-0.5 hover:shadow-[0_0_40px_-10px_rgba(14,165,233,0.7)] backdrop-blur">
+              <h3 className="font-semibold text-sky-300 flex items-center gap-2">Sábado 8 nov <span className="text-[10px] px-2 py-0.5 rounded-full bg-sky-500/20 border border-sky-500/30">Hackathon</span></h3>
               <ul className="mt-3 space-y-2 text-white/80 text-sm">
-                <li>• Hackathon (full day)</li>
-                <li>• Charlas relámpago / stands partners</li>
-                <li>• Mentoría técnica</li>
+                <li>09:00-09:30 — Recepción y desayuno</li>
+                <li>09:30-10:00 — 💼 Sesión ESas/Fujitsu</li>
+                <li>10:00-10:15 — 🎯 Presentación de retos</li>
+                <li>10:15-13:00 — 🧑‍💻 Hackathon + mentoría </li>
+                <li>13:00-14:00 — 🍽️ Comida</li>
+                <li>14:00-17:30 — 🧑‍💻 Hackathon + mentoría </li>
+                <li>17:30-18:00 — ☕ Café/refrescos</li>
+                <li>18:00-20:30 —🧑‍💻 Hackathon + mentoría </li>
+                
+                <li>20:30-∞ — Espacio disponible para hackathon</li>
               </ul>
             </div>
-            <div className="rounded-3xl bg-white/5 border border-white/10 p-6">
-              <h3 className="font-semibold">Domingo 9 nov</h3>
+            <div className="rounded-3xl bg-white/5 border border-violet-500/30 ring-1 ring-violet-500/20 shadow-[0_0_30px_-10px_rgba(139,92,246,0.5)] p-6 transition hover:translate-y-0.5 hover:shadow-[0_0_40px_-10px_rgba(139,92,246,0.7)] backdrop-blur">
+              <h3 className="font-semibold text-violet-300 flex items-center gap-2">Domingo 9 nov <span className="text-[10px] px-2 py-0.5 rounded-full bg-violet-500/20 border border-violet-500/30">Final & Premios</span></h3>
               <ul className="mt-3 space-y-2 text-white/80 text-sm">
-                <li>• Último sprint</li>
-                <li>• Demos & pitching</li>
-                <li>• Deliberación & premios (mediodía)</li>
+                <li>09:00-09:30 — Recepción y desayuno</li>
+                <li>09:30-11:00 — 🏁 Sprint final </li>
+                <li>11:00-11:20 — 🎤 Keynote Quantum Madrid</li>
+                <li>11:20-13:00 — 🧪 Demos, pitches, deliberación</li>
+                <li>13:00-13:30 — 🏆 Entrega de premios y cierre</li>
               </ul>
             </div>
           </div>
-          <p className="mt-4 text-xs text-white/60">* El horario definitivo se publicará tras cerrar espacio y logística.</p>
+          <p className="mt-4 text-xs text-white/60 italic">ℹ️ El horario puede modificarse por temas espacio y logística.</p>
         </div>
       </section>
 
