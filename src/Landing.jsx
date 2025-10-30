@@ -87,7 +87,7 @@ export default function Landing() {
                 <li>18:15-19:00 — 👥 Panel de universidades</li>
                 <li>19:00-19:30 — ☕ Café/refrescos bienvenida</li>
                 <li>19:30-20:00 — Sesión QCentroid</li>
-                <li>20:00-20:30 — Sesión Qubiz.team</li>
+                <li>20:00-20:30 — Sesión QUBIZ.team</li>
                 <li>20:30-21:00 — Configuración equipos y cierre</li>
               </ul>
             </div>
