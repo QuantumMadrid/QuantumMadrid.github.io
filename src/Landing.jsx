@@ -121,53 +121,98 @@ export default function Landing() {
         </div>
       </section>
 
-      {/* Challenges */}
-      <section id="challenges" className="border-t border-white/10">
-        <div className="max-w-6xl mx-auto px-6 py-14">
-          <h2 className="text-2xl md:text-3xl font-bold">Challenges & Temáticas</h2>
-          <p className="mt-3 text-white/80 max-w-3xl">Puedes elegir retos propuestos por IBM y partners, o presentar tu propia idea. También habrá líneas sugeridas por los equipos locales.</p>
+     {/* Challenges */}
+<section id="challenges" className="border-t border-white/10">
+  <div className="max-w-6xl mx-auto px-6 py-14">
+    <h2 className="text-2xl md:text-3xl font-bold">Challenges & Temáticas</h2>
+    <p className="mt-3 text-white/80 max-w-3xl">
+      Puedes elegir retos propuestos por IBM y partners, o presentar tu propia idea. También habrá líneas sugeridas por los equipos locales.
+    </p>
 
-          <div className="mt-8 grid md:grid-cols-2 gap-6">
-            {/* Challenge: Protein Structure (Cleveland Clinic) */}
-            <div className="rounded-3xl bg-white/5 border border-white/10 p-6">
-              <div className="text-sm text-white/60">Cleveland Clinic — con Dan Blankenberg</div>
-              <h3 className="mt-1 text-xl font-semibold">Protein Structure Prediction with Quantum Computing</h3>
-              <p className="mt-2 text-white/80 text-sm">Predecir la estructura 3D de proteínas desde la secuencia. Los métodos AI (e.g., AlphaFold) fallan con secuencias sin homólogos; los enfoques físico‑basados son costosos en clásico. Explora pipelines híbridos quantum‑classical para nuevos espacios de búsqueda.</p>
-              <ul className="mt-3 text-white/70 text-sm list-disc list-inside">
-                <li>Objetivo: prototipos que integren Qiskit en workflows de modelado</li>
-                <li>Resultados esperados: benchmarks y ablations vs. baseline clásica</li>
-              </ul>
-            </div>
+    <div className="mt-8 grid md:grid-cols-2 gap-6">
+      {/* Challenge: Protein Structure (Cleveland Clinic) */}
+      <div className="rounded-3xl bg-white/5 border border-white/10 p-6">
+        <div className="text-sm text-white/60">Cleveland Clinic — con Dan Blankenberg</div>
+        <h3 className="mt-1 text-xl font-semibold">Protein Structure Prediction with Quantum Computing</h3>
+        <p className="mt-2 text-white/80 text-sm">
+          Predecir la estructura 3D de proteínas desde la secuencia con pipelines híbridos cuántico-clásicos cuando faltan homólogos o los enfoques clásicos no escalan.
+        </p>
+        <ul className="mt-3 text-white/70 text-sm list-disc list-inside">
+          <li>Objetivo: integrar Qiskit en workflows de modelado</li>
+          <li>Resultados: benchmarks y ablations vs. baseline clásica</li>
+        </ul>
+      </div>
 
-            {/* Challenge: QKD (RPI) */}
-            <div className="rounded-3xl bg-white/5 border border-white/10 p-6">
-              <div className="text-sm text-white/60">Rensselaer Polytechnic Institute — con Nathaniel DePue</div>
-              <h3 className="mt-1 text-xl font-semibold">Quantum Key Distribution: BB84 en práctica</h3>
-              <p className="mt-2 text-white/80 text-sm">La criptografía pública (RSA/ECC) se ve amenazada por la computación cuántica. QKD aprovecha propiedades cuánticas para acordar claves seguras con detección de intrusiones. Implementa y evalúa <span className="whitespace-nowrap">BB84</span> con simulación de canal y análisis de tasas de error.</p>
-              <ul className="mt-3 text-white/70 text-sm list-disc list-inside">
-                <li>Objetivo: stack de sifting, reconciliación y privacidad</li>
-                <li>Resultados esperados: curvas QBER y throughput vs. ruido</li>
-              </ul>
-            </div>
+      {/* Challenge: QKD (RPI) */}
+      <div className="rounded-3xl bg-white/5 border border-white/10 p-6">
+        <div className="text-sm text-white/60">Rensselaer Polytechnic Institute — con Nathaniel DePue</div>
+        <h3 className="mt-1 text-xl font-semibold">Quantum Key Distribution: BB84 en práctica</h3>
+        <p className="mt-2 text-white/80 text-sm">
+          Implementación de <span className="whitespace-nowrap">BB84</span> con canal ruidoso y análisis de seguridad/throughput.
+        </p>
+        <ul className="mt-3 text-white/70 text-sm list-disc list-inside">
+          <li>Objetivo: sifting, reconciliación y privacidad</li>
+          <li>Resultados: curvas QBER y tasa vs. ruido</li>
+        </ul>
+      </div>
 
-            {/* Theme: Cripto & Comms */}
-            <div className="rounded-3xl bg-white/5 border border-white/10 p-6">
-              <div className="text-sm text-white/60">UPM — SDKs de simulación</div>
-              <h3 className="mt-1 text-xl font-semibold">Criptografía & Comunicaciones cuánticas (QKD/QRNG)</h3>
-              <p className="mt-2 text-white/80 text-sm">Retos de comunicaciones seguras: generación de claves y aleatoriedad cuántica. Simulación y prototipado de protocolos con integración Qiskit.</p>
-            </div>
+      {/* Theme: Cripto & Comms */}
+      <div className="rounded-3xl bg-white/5 border border-white/10 p-6">
+        <div className="text-sm text-white/60">UPM — SDKs de simulación</div>
+        <h3 className="mt-1 text-xl font-semibold">Criptografía & Comunicaciones cuánticas (QKD/QRNG)</h3>
+        <p className="mt-2 text-white/80 text-sm">
+          Prototipado de protocolos y generación de aleatoriedad cuántica con integración Qiskit y simuladores.
+        </p>
+      </div>
 
-            {/* Theme: Open track */}
-            <div className="rounded-3xl bg-white/5 border border-white/10 p-6">
-              <div className="text-sm text-white/60">Open track</div>
-              <h3 className="mt-1 text-xl font-semibold">Optimización, ML cuántico, química, simulación</h3>
-              <p className="mt-2 text-white/80 text-sm">Explora QAOA, VQE, addons de Qiskit (p.ej., SQD), o pipelines híbridos quantum+HPC. Trae un problema de tu empresa o grupo de investigación.</p>
-            </div>
-          </div>
+      {/* Theme: Open track */}
+      <div className="rounded-3xl bg-white/5 border border-white/10 p-6">
+        <div className="text-sm text-white/60">Open track</div>
+        <h3 className="mt-1 text-xl font-semibold">Optimización, ML cuántico, química, simulación</h3>
+        <p className="mt-2 text-white/80 text-sm">
+          Explora QAOA, VQE, librerías de Qiskit o pipelines híbridos quantum+HPC con problemas de empresa o investigación.
+        </p>
+      </div>
 
-          <div className="mt-6 text-xs text-white/60">* IBM propone desafíos adicionales; se anunciarán en la semana previa. Los equipos también podrán proponer su propio reto.</div>
-        </div>
-      </section>
+      {/* NEW: NMR – Propuesta Eva / QUBIZ.team */}
+      <div className="rounded-3xl bg-white/5 border border-white/10 p-6">
+        <div className="text-sm text-white/60">QUBIZ.team — Propuesta de Eva</div>
+        <h3 className="mt-1 text-xl font-semibold">Simulación de espectros RMN con computación cuántica</h3>
+        <p className="mt-2 text-white/80 text-sm">
+          Mapear la dinámica de espines a qubits para construir el Hamiltoniano, simular su evolución temporal y obtener el espectro RMN.
+        </p>
+        <ul className="mt-3 text-white/70 text-sm list-disc list-inside">
+          <li>Objetivo: simular un espectro RMN en Qiskit</li>
+          <li>Resultados: espectro cuántico que reproduzca referencias clásicas/experimentales</li>
+        </ul>
+        <p className="mt-3 text-white/60 text-xs">
+          Opcional: estimar desplazamientos químicos y acoplamientos J con algoritmos de estructura electrónica.
+        </p>
+      </div>
+
+      {/* NEW: Virtual Screening cuántico */}
+      <div className="rounded-3xl bg-white/5 border border-white/10 p-6">
+        <div className="text-sm text-white/60">Fujitsu</div>
+        <h3 className="mt-1 text-xl font-semibold">Virtual Screening cuántico para nuevas moléculas y materiales</h3>
+        <p className="mt-2 text-white/80 text-sm">
+          Formular el screening como optimización sobre grafos y explorar aceleración cuántica/cuántico-inspirada para selección de compuestos (p. ej., captura de CO₂ o materiales sostenibles).
+        </p>
+        <ul className="mt-3 text-white/70 text-sm list-disc list-inside">
+          <li>Objetivo: caso de uso concreto con pipeline reproducible</li>
+          <li>Resultados: métrica de calidad/tiempo vs. baseline clásica y discusión de escalabilidad</li>
+        </ul>
+      </div>
+
+      
+    </div>
+
+    <div className="mt-6 text-xs text-white/60">
+      * IBM propone desafíos adicionales; se anunciarán en la semana previa. Los equipos también podrán proponer su propio reto.
+      <br />
+      * Las descripciones aquí son resumidas; se extenderán durante el hackathon.
+    </div>
+  </div>
+</section>
 
       {/* Prizes & Certificates */}
       <section id="prizes" className="border-t border-white/10">
