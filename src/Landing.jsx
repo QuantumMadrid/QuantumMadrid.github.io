@@ -95,7 +95,7 @@ export default function Landing() {
               <h3 className="font-semibold text-sky-300 flex items-center gap-2">Sábado 8 nov <span className="text-[10px] px-2 py-0.5 rounded-full bg-sky-500/20 border border-sky-500/30">Hackathon</span></h3>
               <ul className="mt-3 space-y-2 text-white/80 text-sm">
                 <li>09:00-09:30 — Recepción y desayuno</li>
-                <li>09:30-10:00 — 💼 Sesión FSas/Fujitsu</li>
+                <li>09:30-10:00 — 💼 Sesión Fsas/Fujitsu</li>
                 <li>10:00-10:15 — 🎯 Presentación de retos</li>
                 <li>10:15-13:00 — 🧑‍💻 Hackathon + mentoría </li>
                 <li>13:00-14:00 — 🍽️ Comida</li>
@@ -258,7 +258,7 @@ export default function Landing() {
         <div className="max-w-6xl mx-auto px-6 py-14">
           <h2 className="text-2xl md:text-3xl font-bold">Organizan & Colaboran</h2>
           <div className="mt-6 grid grid-cols-2 md:grid-cols-4 gap-4">
-            {['Quantum Madrid', 'UPM', 'QCentroid', 'Univ nebrija', 'QUBIZ.team'].map((n)=> (
+            {['Quantum Madrid', 'UPM', 'QCentroid', 'Univ nebrija', 'QUBIZ.team', 'QTEP - CSIC', 'Fsas/Fujitsu'].map((n)=> (
               <div key={n} className="rounded-2xl bg-white/5 border border-white/10 h-20 flex items-center justify-center text-white/80 text-sm">{n}</div>
             ))}
           </div>
