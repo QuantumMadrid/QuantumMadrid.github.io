@@ -95,7 +95,7 @@ export default function Landing() {
               <h3 className="font-semibold text-sky-300 flex items-center gap-2">Sábado 8 nov <span className="text-[10px] px-2 py-0.5 rounded-full bg-sky-500/20 border border-sky-500/30">Hackathon</span></h3>
               <ul className="mt-3 space-y-2 text-white/80 text-sm">
                 <li>09:00-09:30 — Recepción y desayuno</li>
-                <li>09:30-10:00 — 💼 Sesión ESas/Fujitsu</li>
+                <li>09:30-10:00 — 💼 Sesión FSas/Fujitsu</li>
                 <li>10:00-10:15 — 🎯 Presentación de retos</li>
                 <li>10:15-13:00 — 🧑‍💻 Hackathon + mentoría </li>
                 <li>13:00-14:00 — 🍽️ Comida</li>
