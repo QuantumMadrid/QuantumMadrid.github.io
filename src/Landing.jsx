@@ -1,6 +1,6 @@
 export default function Landing() {
-  // Countdown to event start (Nov 7, 2025 17:00 Europe/Madrid)
-  const target = new Date('2025-11-07T17:00:00+01:00');
+  // Countdown to event start (Nov 27, 2026 17:00 Europe/Madrid)
+  const target = new Date('2026-11-27T17:00:00+01:00');
   const now = new Date();
   const ms = Math.max(0, target.getTime() - now.getTime());
   const days = Math.floor(ms / (1000 * 60 * 60 * 24));
@@ -13,14 +13,13 @@ export default function Landing() {
       <header className="w-full border-b border-white/10 bg-gradient-to-r from-[#0f62fe] via-[#0b5fff] to-[#002d9c]">
         <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            {/* Placeholder for Qiskit/IBM/UPM/Quantum Madrid logos */}
+            {/* Logos: place quantum-madrid-icon.png and entangle-tech-hub.png in /public/logos/ (see instructions) */}
             <div className="flex items-center gap-2">
-
-              <div className="w-9 h-9 rounded-xl bg-white/10 flex items-center justify-center text-[10px]">Quantum Madrid</div>
+              <img src="/logos/entangle-tech-hub.png" alt="Entangle" className="w-9 h-9 rounded-xl bg-white/10 p-1.5 object-contain" />
             </div>
-            <span className="ml-2 text-sm md:text-base font-medium tracking-wide">Qiskit Fall Fest — Madrid 2025</span>
+            <span className="ml-2 text-sm md:text-base font-medium tracking-wide">Hackathon Quantum Madrid by Entangle Tech Hub — Fall Fest 2026</span>
           </div>
-          <a href="#register" className="rounded-2xl bg-white text-neutral-900 px-4 py-2 text-sm font-semibold hover:opacity-90">Registro</a>
+          <a href="#register" className="rounded-2xl bg-white text-neutral-900 px-4 py-2 text-sm font-semibold hover:opacity-90">Preinscripción</a>
         </div>
       </header>
 
@@ -30,15 +29,15 @@ export default function Landing() {
         <div className="max-w-6xl mx-auto px-6 py-16 md:py-24">
           <div className="grid md:grid-cols-2 gap-10 items-center">
             <div>
-              <h1 className="text-3xl md:text-5xl font-extrabold tracking-tight leading-tight">Hackathon Quantum Madrid × UPM</h1>
-              <p className="mt-4 text-lg text-white/80 max-w-prose">Un fin de semana para aprender, construir y demostrar aplicaciones cuánticas reales con <strong>Qiskit</strong> y partners académicos e industriales. Keynotes, zona de trabajo, y stands. Abierto a principiantes y perfiles avanzados.</p>
+              <h1 className="text-3xl md:text-5xl font-extrabold tracking-tight leading-tight">Hackathon Quantum Madrid by Entangle Tech Hub</h1>
+              <p className="mt-4 text-lg text-white/80 max-w-prose">Un fin de semana para aprender, construir y demostrar aplicaciones cuánticas reales con <strong>Qiskit</strong> y partners académicos e industriales. Keynotes, zona de trabajo y mentoría. Abierto a principiantes y perfiles avanzados.</p>
               <ul className="mt-6 text-white/80 space-y-2">
-                <li>📅 <strong>7–9 de noviembre de 2025</strong> (vie–dom)</li>
-                <li>📍 <strong>DOMO 360</strong> </li>
-                <li>📍<a href="https://maps.app.goo.gl/FbutC3XSLDbH1xSY9">Jardines Escuela de Ingenieros Agronomos, Domo360, Av. Puerta de Hierro, 2, 28040 Madrid, España </a> </li>
+                <li>📅 <strong>27–29 de noviembre de 2026</strong> (vie–dom)</li>
+                <li>📍 <strong>42 Madrid — Fundación Telefónica</strong></li>
+                <li>📍<a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0xd422bda71f91819:0xf18dccc1ef92608c?sa=X&ved=1t:8290&ictx=111" target="_blank" rel="noreferrer" className="underline hover:text-white">Distrito Telefónica, Edificio Norte 3, 28050 Madrid</a></li>
               </ul>
               <div className="mt-8 flex gap-3">
-                <a href="#register" className="rounded-2xl bg-[#0f62fe] px-5 py-3 font-semibold hover:bg-[#0043ce]">Apúntate</a>
+                <a href="#register" className="rounded-2xl bg-[#0f62fe] px-5 py-3 font-semibold hover:bg-[#0043ce]">Preinscripción</a>
                 <a href="#challenges" className="rounded-2xl border border-white/20 px-5 py-3 font-semibold hover:bg-white/5">Ver retos</a>
               </div>
               {ms > 0 && (
@@ -62,10 +61,10 @@ export default function Landing() {
                   </div>
                   <div className="rounded-2xl bg-white/5 p-4">
                     <div className="text-white/60">Plazas</div>
-                    <div className="mt-1 font-semibold">70–100 participantes</div>
+                    <div className="mt-1 font-semibold">100–150 participantes</div>
                   </div>
                 </div>
-                <p className="mt-4 text-xs text-white/60">* Se habilitará Wi‑Fi, proyector y streaming para conexión con IBM. Requisitos logísticos por confirmar con UPM.</p>
+                <p className="mt-4 text-xs text-white/60">* Se habilitará Wi‑Fi, proyector y streaming para conexión con IBM. Requisitos logísticos por confirmar con 42 Madrid.</p>
               </div>
             </div>
           </div>
@@ -78,141 +77,111 @@ export default function Landing() {
           <h2 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-fuchsia-400 via-violet-400 to-sky-400 bg-clip-text text-transparent">Agenda</h2>
           <div className="mt-6 grid md:grid-cols-3 gap-6">
             <div className="rounded-3xl bg-white/5 border border-fuchsia-500/30 ring-1 ring-fuchsia-500/20 shadow-[0_0_30px_-10px_rgba(217,70,239,0.5)] p-6 transition hover:translate-y-0.5 hover:shadow-[0_0_40px_-10px_rgba(217,70,239,0.7)] backdrop-blur">
-              <h3 className="font-semibold text-fuchsia-300 flex items-center gap-2">Viernes 7 nov <span className="text-[10px] px-2 py-0.5 rounded-full bg-fuchsia-500/20 border border-fuchsia-500/30">Kickoff</span></h3>
+              <h3 className="font-semibold text-fuchsia-300 flex items-center gap-2">Viernes 27 nov <span className="text-[10px] px-2 py-0.5 rounded-full bg-fuchsia-500/20 border border-fuchsia-500/30">Kickoff</span></h3>
               <ul className="mt-3 space-y-2 text-white/80 text-sm">
                 <li>👋 16:30-17:00 — Llegada y registro</li>
-                <li>17:00-17:15 — 🎤 Sesión de bienvenida</li>
-                <li>17:15-17:45 — 🎓 Keynote equipo UPM</li>
-                <li>17:45-18:15 — 💡 Keynote IBM</li>
-                <li>18:15-19:00 — 👥 Panel de universidades</li>
-                <li>19:00-19:30 — ☕ Café/refrescos bienvenida</li>
-                <li>19:30-20:00 — Sesión QCentroid</li>
-                <li>20:00-20:30 — Sesión QUBIZ.team</li>
-                <li>20:30-21:00 — Configuración equipos y cierre</li>
+                <li>17:00-17:30 — 🎤 Sesión de bienvenida</li>
+                <li>17:30-18:30 — 🎓 Keynote Quantum Madrid by Entangle</li>
+                <li>18:30-19:15 — 👥 Configuración de equipos</li>
+                <li>19:15-19:30 — Cierre y networking</li>
               </ul>
             </div>
             <div className="rounded-3xl bg-white/5 border border-sky-500/30 ring-1 ring-sky-500/20 shadow-[0_0_30px_-10px_rgba(14,165,233,0.5)] p-6 transition hover:translate-y-0.5 hover:shadow-[0_0_40px_-10px_rgba(14,165,233,0.7)] backdrop-blur">
-              <h3 className="font-semibold text-sky-300 flex items-center gap-2">Sábado 8 nov <span className="text-[10px] px-2 py-0.5 rounded-full bg-sky-500/20 border border-sky-500/30">Hackathon</span></h3>
+              <h3 className="font-semibold text-sky-300 flex items-center gap-2">Sábado 28 nov <span className="text-[10px] px-2 py-0.5 rounded-full bg-sky-500/20 border border-sky-500/30">Hackathon</span></h3>
               <ul className="mt-3 space-y-2 text-white/80 text-sm">
                 <li>09:00-09:30 — Recepción y desayuno</li>
-                <li>09:30-10:00 — 💼 Sesión Fsas/Fujitsu</li>
-                <li>10:00-10:15 — 🎯 Presentación de retos</li>
-                <li>10:15-13:00 — 🧑‍💻 Hackathon + mentoría </li>
+                <li>09:30-09:45 — 🎯 Presentación de retos</li>
+                <li>09:45-13:00 — 🧑‍💻 Hackathon + mentoría </li>
                 <li>13:00-14:00 — 🍽️ Comida</li>
                 <li>14:00-17:30 — 🧑‍💻 Hackathon + mentoría </li>
                 <li>17:30-18:00 — ☕ Café/refrescos</li>
                 <li>18:00-20:30 —🧑‍💻 Hackathon + mentoría </li>
-                
                 <li>20:30-∞ — Espacio disponible para hackathon</li>
               </ul>
             </div>
             <div className="rounded-3xl bg-white/5 border border-violet-500/30 ring-1 ring-violet-500/20 shadow-[0_0_30px_-10px_rgba(139,92,246,0.5)] p-6 transition hover:translate-y-0.5 hover:shadow-[0_0_40px_-10px_rgba(139,92,246,0.7)] backdrop-blur">
-              <h3 className="font-semibold text-violet-300 flex items-center gap-2">Domingo 9 nov <span className="text-[10px] px-2 py-0.5 rounded-full bg-violet-500/20 border border-violet-500/30">Final & Premios</span></h3>
+              <h3 className="font-semibold text-violet-300 flex items-center gap-2">Domingo 29 nov <span className="text-[10px] px-2 py-0.5 rounded-full bg-violet-500/20 border border-violet-500/30">Final & Premios</span></h3>
               <ul className="mt-3 space-y-2 text-white/80 text-sm">
                 <li>09:00-09:30 — Recepción y desayuno</li>
                 <li>09:30-11:00 — 🏁 Sprint final </li>
-                <li>11:00-11:20 — 🎤 Keynote Quantum Madrid</li>
+                <li>11:00-11:20 — 🎤 Keynote Quantum Madrid by Entangle</li>
                 <li>11:20-13:00 — 🧪 Demos, pitches, deliberación</li>
                 <li>13:00-13:30 — 🏆 Entrega de premios y cierre</li>
               </ul>
             </div>
           </div>
-          <p className="mt-4 text-xs text-white/60 italic">ℹ️ El horario puede modificarse por temas espacio y logística.</p>
+          <p className="mt-4 text-xs text-white/60 italic">ℹ️ Sponsors y ponentes aún por confirmar — el horario puede modificarse por temas de espacio y logística.</p>
         </div>
       </section>
 
-     {/* Challenges */}
-<section id="challenges" className="border-t border-white/10">
-  <div className="max-w-6xl mx-auto px-6 py-14">
-    <h2 className="text-2xl md:text-3xl font-bold">Challenges & Temáticas</h2>
-    <p className="mt-3 text-white/80 max-w-3xl">
-      Puedes elegir retos propuestos por IBM y partners, o presentar tu propia idea. También habrá líneas sugeridas por los equipos locales.
-    </p>
+      {/* Challenges */}
+      <section id="challenges" className="border-t border-white/10">
+        <div className="max-w-6xl mx-auto px-6 py-14">
+          <h2 className="text-2xl md:text-3xl font-bold">Challenges & Temáticas</h2>
+          <p className="mt-3 text-white/80 max-w-3xl">
+            Este año traemos los retos <strong>BasQ (Basque Quantum) x IBM Quantum</strong>: tres tracks inspirados en hitos reales de la computación cuántica de la última década. Cada track admite tres niveles de dificultad —principiante, intermedio y avanzado— para que puedas entrar donde te sientas cómodo, y se valora comparar simulación ideal con ejecución en hardware cuántico real.
+          </p>
 
-    <div className="mt-8 grid md:grid-cols-2 gap-6">
-      {/* Challenge: Protein Structure (Cleveland Clinic) */}
-      <div className="rounded-3xl bg-white/5 border border-white/10 p-6">
-        <div className="text-sm text-white/60">Cleveland Clinic — con Dan Blankenberg</div>
-        <h3 className="mt-1 text-xl font-semibold">Protein Structure Prediction with Quantum Computing</h3>
-        <p className="mt-2 text-white/80 text-sm">
-          Predecir la estructura 3D de proteínas desde la secuencia con pipelines híbridos cuántico-clásicos cuando faltan homólogos o los enfoques clásicos no escalan.
-        </p>
-        <ul className="mt-3 text-white/70 text-sm list-disc list-inside">
-          <li>Objetivo: integrar Qiskit en workflows de modelado</li>
-          <li>Resultados: benchmarks y ablations vs. baseline clásica</li>
-        </ul>
-      </div>
+          <div className="mt-8 grid md:grid-cols-2 gap-6">
+            {/* Track 1: Quantum chemistry */}
+            <div className="rounded-3xl bg-white/5 border border-white/10 p-6">
+              <div className="text-sm text-white/60">Track 1 — BasQ x IBM Quantum</div>
+              <h3 className="mt-1 text-xl font-semibold">Química cuántica: el mapa energético de una molécula</h3>
+              <p className="mt-2 text-white/80 text-sm">
+                Inspirado en la demostración de IBM Quantum (2017) de un Variational Quantum Eigensolver eficiente en hardware. El objetivo es calcular y representar la superficie de energía potencial (PES) de moléculas, desde ligeras hasta más pesadas.
+              </p>
+              <ul className="mt-3 text-white/70 text-sm list-disc list-inside">
+                <li>Beginner: PES del ion HeH⁺</li>
+                <li>Intermediate: moléculas mayores (LiH, BeH₂) con menos recursos cuánticos</li>
+                <li>Advanced: técnicas más allá de un único ansatz (p. ej. SQD) en sistemas fuertemente correlacionados</li>
+              </ul>
+            </div>
 
-      {/* Challenge: QKD (RPI) */}
-      <div className="rounded-3xl bg-white/5 border border-white/10 p-6">
-        <div className="text-sm text-white/60">Rensselaer Polytechnic Institute — con Nathaniel DePue</div>
-        <h3 className="mt-1 text-xl font-semibold">Quantum Key Distribution: BB84 en práctica</h3>
-        <p className="mt-2 text-white/80 text-sm">
-          Implementación de <span className="whitespace-nowrap">BB84</span> con canal ruidoso y análisis de seguridad/throughput.
-        </p>
-        <ul className="mt-3 text-white/70 text-sm list-disc list-inside">
-          <li>Objetivo: sifting, reconciliación y privacidad</li>
-          <li>Resultados: curvas QBER y tasa vs. ruido</li>
-        </ul>
-      </div>
+            {/* Track 2: Quantum optimization / QML */}
+            <div className="rounded-3xl bg-white/5 border border-white/10 p-6">
+              <div className="text-sm text-white/60">Track 2 — BasQ x IBM Quantum</div>
+              <h3 className="mt-1 text-xl font-semibold">Optimización cuántica / QML</h3>
+              <p className="mt-2 text-white/80 text-sm">
+                Inspirado en la introducción de QAOA (2014) y su posterior demostración a gran escala en hardware real de IBM. Resuelve un problema de optimización real usando técnicas cuánticas, de machine learning, o ambas.
+              </p>
+              <ul className="mt-3 text-white/70 text-sm list-disc list-inside">
+                <li>Beginner: selección de cartera con QAOA</li>
+                <li>Intermediate: instancia más grande o restringida; QAOA vs. QML, con baseline clásico</li>
+                <li>Advanced: trainability (barren plateaus), términos de orden superior (HUBO) y múltiples restricciones</li>
+              </ul>
+            </div>
 
-      {/* Theme: Cripto & Comms */}
-      <div className="rounded-3xl bg-white/5 border border-white/10 p-6">
-        <div className="text-sm text-white/60">UPM — SDKs de simulación</div>
-        <h3 className="mt-1 text-xl font-semibold">Criptografía & Comunicaciones cuánticas (QKD/QRNG)</h3>
-        <p className="mt-2 text-white/80 text-sm">
-          Prototipado de protocolos y generación de aleatoriedad cuántica con integración Qiskit y simuladores.
-        </p>
-      </div>
+            {/* Track 3: Hamiltonian simulation */}
+            <div className="rounded-3xl bg-white/5 border border-white/10 p-6">
+              <div className="text-sm text-white/60">Track 3 — BasQ x IBM Quantum</div>
+              <h3 className="mt-1 text-xl font-semibold">Simulación Hamiltoniana</h3>
+              <p className="mt-2 text-white/80 text-sm">
+                Inspirado en el famoso "utility paper" de IBM, que demostró un modelo kicked-Ising a gran escala con mitigación de errores. Escala el modelo de Ising de campo transverso (TFIM) desde unos pocos qubits hasta una realización de 100+ qubits.
+              </p>
+              <ul className="mt-3 text-white/70 text-sm list-disc list-inside">
+                <li>Beginner: correlaciones en un TFIM de pocos qubits</li>
+                <li>Intermediate: cadena 1D más larga o evolución más extensa, con mitigación de errores</li>
+                <li>Advanced: red 2D o cadena 1D grande, con validación clásica de los resultados</li>
+              </ul>
+            </div>
 
-      {/* Theme: Open track */}
-      <div className="rounded-3xl bg-white/5 border border-white/10 p-6">
-        <div className="text-sm text-white/60">Open track</div>
-        <h3 className="mt-1 text-xl font-semibold">Optimización, ML cuántico, química, simulación</h3>
-        <p className="mt-2 text-white/80 text-sm">
-          Explora QAOA, VQE, librerías de Qiskit o pipelines híbridos quantum+HPC con problemas de empresa o investigación.
-        </p>
-      </div>
+            {/* More challenges coming */}
+            <div className="rounded-3xl bg-white/5 border border-dashed border-white/20 p-6 flex flex-col justify-center">
+              <div className="text-sm text-white/60">🔜 Próximamente</div>
+              <h3 className="mt-1 text-xl font-semibold">Más challenges y temáticas en camino</h3>
+              <p className="mt-2 text-white/80 text-sm">
+                Iremos añadiendo más challenges y temáticas a medida que se vayan confirmando y según nos indiquen las empresas y organizaciones participantes.
+              </p>
+            </div>
+          </div>
 
-      {/* NEW: NMR – Propuesta Eva / QUBIZ.team */}
-      <div className="rounded-3xl bg-white/5 border border-white/10 p-6">
-        <div className="text-sm text-white/60">QUBIZ.team — Propuesta de Eva</div>
-        <h3 className="mt-1 text-xl font-semibold">Simulación de espectros RMN con computación cuántica</h3>
-        <p className="mt-2 text-white/80 text-sm">
-          Mapear la dinámica de espines a qubits para construir el Hamiltoniano, simular su evolución temporal y obtener el espectro RMN.
-        </p>
-        <ul className="mt-3 text-white/70 text-sm list-disc list-inside">
-          <li>Objetivo: simular un espectro RMN en Qiskit</li>
-          <li>Resultados: espectro cuántico que reproduzca referencias clásicas/experimentales</li>
-        </ul>
-        <p className="mt-3 text-white/60 text-xs">
-          Opcional: estimar desplazamientos químicos y acoplamientos J con algoritmos de estructura electrónica.
-        </p>
-      </div>
-
-      {/* NEW: Virtual Screening cuántico */}
-      <div className="rounded-3xl bg-white/5 border border-white/10 p-6">
-        <div className="text-sm text-white/60">Fujitsu</div>
-        <h3 className="mt-1 text-xl font-semibold">Virtual Screening cuántico para nuevas moléculas y materiales</h3>
-        <p className="mt-2 text-white/80 text-sm">
-          Formular el screening como optimización sobre grafos y explorar aceleración cuántica/cuántico-inspirada para selección de compuestos (p. ej., captura de CO₂ o materiales sostenibles).
-        </p>
-        <ul className="mt-3 text-white/70 text-sm list-disc list-inside">
-          <li>Objetivo: caso de uso concreto con pipeline reproducible</li>
-          <li>Resultados: métrica de calidad/tiempo vs. baseline clásica y discusión de escalabilidad</li>
-        </ul>
-      </div>
-
-      
-    </div>
-
-    <div className="mt-6 text-xs text-white/60">
-      * IBM propone desafíos adicionales; se anunciarán en la semana previa. Los equipos también podrán proponer su propio reto.
-      <br />
-      * Las descripciones aquí son resumidas; se extenderán durante el hackathon.
-    </div>
-  </div>
-</section>
+          <div className="mt-6 text-xs text-white/60">
+            * Los equipos también podrán proponer su propio reto.
+            <br />
+            * Las descripciones aquí son resumidas; se extenderán con más detalle antes del hackathon.
+          </div>
+        </div>
+      </section>
 
       {/* Prizes & Certificates */}
       <section id="prizes" className="border-t border-white/10">
@@ -220,20 +189,20 @@ export default function Landing() {
           <h2 className="text-2xl md:text-3xl font-bold">Premios y Certificados</h2>
             <p className="mt-3 text-white/80 max-w-3xl"></p>
 
-          
+
           {/* Theme: Open track */}
             <div className="rounded-3xl bg-white/5 border border-white/10 p-6">
               <div className="text-sm text-white/60">🎁 Premios:</div>
               <h3 className="mt-1 text-xl font-semibold">Qiskit Swagg y sorpresas cortesía de nuestros partners.</h3>
             </div>
            <p className="mt-3 text-white/80 max-w-3xl">
-             <span className="font-semibold"></span> 
+             <span className="font-semibold"></span>
           </p>
           <div className="rounded-3xl bg-white/5 border border-white/10 p-6">
               <div className="text-sm text-white/60">📜 Certificados:</div>
               <h3 className="mt-1 text-xl font-semibold"> Todos los participantes recibirán un certificado oficial de participación, y los equipos ganadores obtendrán un certificado especial firmado por <span className="font-semibold">IBM</span>.</h3>
             </div>
-    
+
           <p className="mt-4 text-xs text-white/60">
             * Los premios y reconocimientos adicionales se confirmarán próximamente.
           </p>
@@ -244,12 +213,12 @@ export default function Landing() {
       <section id="register" className="border-t border-white/10">
         <div className="max-w-6xl mx-auto px-6 py-14">
           <h2 className="text-2xl md:text-3xl font-bold">Preinscripción</h2>
-          <p className="mt-3 text-white/80 max-w-3xl">Indica si participas solo o en equipo y propone (opcional) un tema o problema. Usaremos esta info para ayudarte a formar equipo y a priorizar mentoría.</p>
-          <div className="mt-6 flex flex-wrap gap-3">
-            <a className="rounded-2xl bg-[#0f62fe] px-5 py-3 font-semibold hover:bg-[#0043ce]" href="https://www.meetup.com/es-ES/quantummadrid/events/311082827/" target="_blank">Ir a la página de Meetup</a>
+          <p className="mt-3 text-white/80 max-w-3xl">La preinscripción se abrirá pronto. Indica si participarás solo o en equipo y propón (opcional) un tema o problema — usaremos esta info para ayudarte a formar equipo y a priorizar mentoría.</p>
+          <div className="mt-6 flex flex-wrap gap-3 items-center">
+            <span className="rounded-2xl bg-white/10 border border-white/20 px-5 py-3 font-semibold text-white/80">🔜 Preinscripción — próximamente</span>
             <a className="rounded-2xl border border-white/20 px-5 py-3 font-semibold hover:bg-white/5" href="#faq">FAQ</a>
           </div>
-          <p className="mt-4 text-xs text-white/60">También anunciaremos actualizaciones en Discord y redes sociales.</p>
+          <p className="mt-4 text-xs text-white/60">Anunciaremos la apertura de la preinscripción y todas las actualizaciones a través de nuestras redes y canales de Quantum Madrid / Entangle Tech Hub.</p>
         </div>
       </section>
 
@@ -258,9 +227,27 @@ export default function Landing() {
         <div className="max-w-6xl mx-auto px-6 py-14">
           <h2 className="text-2xl md:text-3xl font-bold">Organizan & Colaboran</h2>
           <div className="mt-6 grid grid-cols-2 md:grid-cols-4 gap-4">
-            {['Quantum Madrid', 'UPM', 'QCentroid', 'Univ nebrija', 'QUBIZ.team', 'QTEP - CSIC', 'Fsas/Fujitsu'].map((n)=> (
-              <div key={n} className="rounded-2xl bg-white/5 border border-white/10 h-20 flex items-center justify-center text-white/80 text-sm">{n}</div>
-            ))}
+            <div className="rounded-2xl bg-white/5 border border-white/10 h-20 flex items-center justify-center p-4">
+              <img src="/logos/quantum-madrid-icon.png" alt="Quantum Madrid" className="max-h-10 object-contain" />
+              <span className="ml-2 text-white/80 text-sm">Quantum Madrid</span>
+            </div>
+            <div className="rounded-2xl bg-white/5 border border-white/10 h-20 flex items-center justify-center p-4">
+              <img src="/logos/entangle-tech-hub.png" alt="Entangle Tech Hub" className="max-h-10 object-contain" />
+            </div>
+            <div className="rounded-2xl bg-white border border-white/10 h-20 flex items-center justify-center p-4">
+              <img src="/logos/42-madrid.png" alt="42 Madrid — Fundación Telefónica" className="max-h-12 object-contain" />
+            </div>
+            <div className="rounded-2xl bg-white/5 border border-white/10 h-20 flex items-center justify-center p-4">
+              <img src="/logos/qcentroid_logo_white.png" alt="Qcentroid" className="max-h-10 object-contain" />
+              <span className="ml-2 text-white/80 text-sm"></span>
+            </div>
+            <div className="rounded-2xl bg-white/5 border border-white/10 h-20 flex items-center justify-center p-4">
+              <img src="/logos/ibm-quantum.png" alt="IBM Quantum" className="max-h-8 object-contain" />
+            </div>
+            <div className="rounded-2xl bg-white/5 border border-white/10 h-20 flex items-center justify-center p-4">
+              <img src="/logos/qiskit.png" alt="Qiskit" className="max-h-10 object-contain" />
+              <span className="ml-2 text-white/80 text-sm">Qiskit</span>
+            </div>
           </div>
           <p className="mt-4 text-xs text-white/60">* Logos provisionales. Se actualizarán tras confirmación de partners.</p>
         </div>
@@ -280,8 +267,8 @@ export default function Landing() {
               <p className="mt-2">Portátil, cargador y cuenta en IBM Quantum. Recomendado preparar entorno con antelación para evitar la “battle of the install”.</p>
             </div>
             <div>
-              <h3 className="font-semibold text-white">¿Cómo me entero de las sesiones previas?</h3>
-              <p className="mt-2">Publicaremos recordatorios en Meetup.</p>
+              <h3 className="font-semibold text-white">¿Cómo me entero de las novedades?</h3>
+              <p className="mt-2">Publicaremos recordatorios y actualizaciones a través de nuestras redes y canales de Quantum Madrid / Entangle Tech Hub.</p>
             </div>
             <div>
               <h3 className="font-semibold text-white">¿Habrá certificados?</h3>
@@ -294,9 +281,9 @@ export default function Landing() {
       {/* Footer */}
       <footer className="border-t border-white/10">
         <div className="max-w-6xl mx-auto px-6 py-10 text-sm text-white/60 flex flex-col md:flex-row gap-3 md:items-center md:justify-between">
-          <div>© 2025 Quantum Madrid × UPM — Qiskit Fall Fest Madrid</div>
+          <div>© 2026 Quantum Madrid × Entangle Tech Hub — Hackathon Quantum Madrid, 42 Madrid (Fundación Telefónica)</div>
           <div className="flex gap-4">
-            <a href="#register" className="hover:text-white">Registro</a>
+            <a href="#register" className="hover:text-white">Preinscripción</a>
             <a href="#challenges" className="hover:text-white">Retos</a>
             <a href="#agenda" className="hover:text-white">Agenda</a>
             <a href="#partners" className="hover:text-white">Partners</a>
