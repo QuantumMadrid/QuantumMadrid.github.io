@@ -9,6 +9,8 @@ export default function Landing() {
 
   // Inscripción en Eventbrite (gestionada con 42 Madrid)
   const registerUrl = 'https://www.eventbrite.es/e/hackathon-quantum-madrid-computacion-cuantica-en-42-madrid-tickets-2003446624786';
+  // Repositorio público del hackathon (bases, privacidad, material de los retos y entregas)
+  const repoUrl = 'https://github.com/QuantumMadrid/Entangle_Qiskit_Fall_Fest_2026';
   return (
     <div className="min-h-screen bg-neutral-950 text-white">
       {/* Top bar */}
@@ -71,7 +73,7 @@ export default function Landing() {
                   </div>
                   <div className="rounded-2xl bg-white/5 p-4">
                     <div className="text-white/60">Tecnologías</div>
-                    <div className="mt-1 font-semibold">Qiskit, SDKs QKD/QRNG, simuladores</div>
+                    <div className="mt-1 font-semibold">Qiskit, Qiskit Runtime, hardware IBM y simuladores</div>
                   </div>
                   <div className="rounded-2xl bg-white/5 p-4">
                     <div className="text-white/60">Nivel</div>
@@ -137,7 +139,7 @@ export default function Landing() {
         <div className="max-w-6xl mx-auto px-6 py-14">
           <h2 className="text-2xl md:text-3xl font-bold">Challenges & Temáticas</h2>
           <p className="mt-3 text-white/80 max-w-3xl">
-            Este año traemos los retos <strong>BasQ (Basque Quantum) x IBM Quantum</strong>: tres tracks inspirados en hitos reales de la computación cuántica de la última década. Cada track admite tres niveles de dificultad —principiante, intermedio y avanzado— para que puedas entrar donde te sientas cómodo, y se valora comparar simulación ideal con ejecución en hardware cuántico real.
+            Este año hay <strong>cinco retos</strong> preparados por tres equipos: <strong>BasQ (Basque Quantum) x IBM Quantum</strong> (tracks 1–3), <strong>IBM Quantum</strong> (track 4) y <strong>quanTA – University of Saskatchewan</strong> (track 5). Todos tienen varios niveles de dificultad para que puedas entrar donde te sientas cómodo, y en todos se valora comparar la simulación ideal con la ejecución en hardware cuántico real.
           </p>
 
           <div className="mt-8 grid md:grid-cols-2 gap-6">
@@ -174,21 +176,51 @@ export default function Landing() {
               <div className="text-sm text-white/60">Track 3 — BasQ x IBM Quantum</div>
               <h3 className="mt-1 text-xl font-semibold">Simulación Hamiltoniana</h3>
               <p className="mt-2 text-white/80 text-sm">
-                Inspirado en el famoso "utility paper" de IBM, que demostró un modelo kicked-Ising a gran escala con mitigación de errores. Escala el modelo de Ising de campo transverso (TFIM) desde unos pocos qubits hasta una realización de 100+ qubits.
+                Inspirado en las simulaciones de dinámica de espines en hardware de IBM (2019) y en el famoso "utility paper" (2023), que demostró un modelo kicked-Ising a gran escala con mitigación de errores. Simula la evolución en el tiempo del modelo de Ising de campo transverso (TFIM) y llévala hasta donde comprobarla en un ordenador clásico se vuelve difícil.
               </p>
               <ul className="mt-3 text-white/70 text-sm list-disc list-inside">
-                <li>Beginner: correlaciones en un TFIM de pocos qubits</li>
-                <li>Intermediate: cadena 1D más larga o evolución más extensa, con mitigación de errores</li>
-                <li>Advanced: red 2D o cadena 1D grande, con validación clásica de los resultados</li>
+                <li>Beginner: correlaciones, tamaño del paso de Trotter y fórmulas de orden superior en una cadena pequeña</li>
+                <li>Intermediate: cadenas más largas o redes casi 2D con ruido, recuperando la señal con mitigación de errores</li>
+                <li>Advanced: evolución kicked (Floquet) a gran escala, con resultados fiables en hardware real</li>
               </ul>
             </div>
 
-            {/* More challenges coming */}
-            <div className="rounded-3xl bg-white/5 border border-dashed border-white/20 p-6 flex flex-col justify-center">
-              <div className="text-sm text-white/60">🔜 Próximamente</div>
-              <h3 className="mt-1 text-xl font-semibold">Más challenges y temáticas en camino</h3>
+            {/* Track 4: Error mitigation (IBM Quantum) */}
+            <div className="rounded-3xl bg-white/5 border border-white/10 p-6">
+              <div className="text-sm text-white/60">Track 4 — IBM Quantum</div>
+              <h3 className="mt-1 text-xl font-semibold">Noise Busters: mitigación de errores en hardware real</h3>
               <p className="mt-2 text-white/80 text-sm">
-                Iremos añadiendo más challenges y temáticas a medida que se vayan confirmando y según nos indiquen las empresas y organizaciones participantes.
+                El reto abierto de IBM para el Fall Fest 2026. Estima ⟨Z₆Z₇⟩ en una cadena de Ising de 15 qubits ejecutada en un ordenador cuántico real y acércate lo más posible al valor de referencia. Un evaluador automático puntúa tu resultado de 0 a 100.
+              </p>
+              <ul className="mt-3 text-white/70 text-sm list-disc list-inside">
+                <li>Calentamiento: SLC Partner Lab, un laboratorio guiado de 4 ejercicios con corrección automática</li>
+                <li>Herramientas: Noise Learner, Samplomatic, Executor y los add-ons SLC y PNA</li>
+                <li>Estrategia libre: combina TREX, ZNE, PEC, SLC, PNA o desacoplamiento dinámico</li>
+              </ul>
+            </div>
+
+            {/* Track 5: Geometry-aware cloud challenge (quanTA / USask) */}
+            <div className="rounded-3xl bg-white/5 border border-white/10 p-6">
+              <div className="text-sm text-white/60">Track 5 — quanTA · University of Saskatchewan</div>
+              <h3 className="mt-1 text-xl font-semibold">Hyperbolic Futures: conectividad, routing y ruido</h3>
+              <p className="mt-2 text-white/80 text-sm">
+                Crea un par de Bell verificado entre dos puertos fijos en tres modelos de procesador: uno inspirado en el primer procesador de 5 qubits en la nube (2016), uno actual al estilo IBM y uno hipotético con conectividad de red hiperbólica. Prueba una estrategia de detección de errores y compara fidelidad, coste del circuito y disparos descartados.
+              </p>
+              <ul className="mt-3 text-white/70 text-sm list-disc list-inside">
+                <li>Explorer: par de Bell y una comprobación sencilla de errores</li>
+                <li>Builder: colocación, routing o comprobaciones mejoradas</li>
+                <li>Research: codificación adaptada a la geometría o red de estabilizadores</li>
+              </ul>
+            </div>
+
+            {/* Starter kit */}
+            <div className="rounded-3xl bg-white/5 border border-dashed border-white/20 p-6 flex flex-col justify-center">
+              <div className="text-sm text-white/60">📦 Kit de inicio</div>
+              <h3 className="mt-1 text-xl font-semibold">Material para arrancar en cada track</h3>
+              <p className="mt-2 text-white/80 text-sm">
+                Cada reto trae su punto de partida: notebooks tutoriales para los tracks 1 a 4 y la guía del reto para el track 5. Lo publicaremos en el{' '}
+                <a href={repoUrl} target="_blank" rel="noreferrer" className="underline hover:text-white">repositorio del hackathon</a>.
+                Ven con el entorno instalado y tu cuenta de IBM Quantum creada.
               </p>
             </div>
           </div>
