@@ -7,11 +7,8 @@ export default function Landing() {
   const hours = Math.floor((ms / (1000 * 60 * 60)) % 24);
   const minutes = Math.floor((ms / (1000 * 60)) % 60);
 
-    // Apertura de la preinscripción: 8 oct 2026, al acabar la visita guiada
-  const regOpen = new Date('2026-10-08T19:15:00+02:00');
-  const registrationOpen = now.getTime() >= regOpen.getTime();
-  const meetupUrl = 'https://www.meetup.com/es-es/quantummadrid/events/316468534/';
-  const registerUrl = ''; //  aquí la URL del formulario cuando la tenga
+  // Inscripción en Eventbrite (gestionada con 42 Madrid)
+  const registerUrl = 'https://www.eventbrite.es/e/hackathon-quantum-madrid-computacion-cuantica-en-42-madrid-tickets-2003446624786';
   return (
     <div className="min-h-screen bg-neutral-950 text-white">
       {/* Top bar */}
@@ -32,14 +29,14 @@ export default function Landing() {
       <div className="w-full bg-amber-400/10 border-b border-amber-400/30">
         <div className="max-w-6xl mx-auto px-6 py-3 flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-3 text-sm">
           <span className="font-semibold text-amber-200">
-            {registrationOpen ? '✅ ¡Preinscripción abierta!' : '🚀 La preinscripción se abre el 8 de octubre'}
+            ✅ ¡Preinscripción abierta!
           </span>
           <span className="text-amber-100/80">
-            La anunciamos en nuestro meetup, justo después de la visita guiada a “Revolución Cuántica” en Espacio Fundación Telefónica.
+            Reserva tu plaza en Eventbrite.
           </span>
-          <a href={meetupUrl} target="_blank" rel="noreferrer"
+          <a href={registerUrl} target="_blank" rel="noreferrer"
              className="sm:ml-auto whitespace-nowrap underline underline-offset-2 text-amber-200 hover:text-white">
-            Ver el meetup →
+            Ir a Eventbrite →
           </a>
         </div>
       </div>
@@ -54,7 +51,7 @@ export default function Landing() {
               <ul className="mt-6 text-white/80 space-y-2">
                 <li>📅 <strong>27–29 de noviembre de 2026</strong> (vie–dom)</li>
                 <li>📍 <strong>42 Madrid — Fundación Telefónica</strong></li>
-                <li>📝 Preinscripción: <strong>se abre el 8 de octubre de 2026</strong></li>
+                <li>📝 Preinscripción: <a href={registerUrl} target="_blank" rel="noreferrer" className="underline font-semibold hover:text-white">abierta en Eventbrite</a></li>
                 <li>📍<a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0xd422bda71f91819:0xf18dccc1ef92608c?sa=X&ved=1t:8290&ictx=111" target="_blank" rel="noreferrer" className="underline hover:text-white">Distrito Telefónica, Edificio Norte 3, 28050 Madrid</a></li>
               </ul>
               <div className="mt-8 flex gap-3">
@@ -235,23 +232,14 @@ export default function Landing() {
         <div className="max-w-6xl mx-auto px-6 py-14">
           <h2 className="text-2xl md:text-3xl font-bold">Preinscripción</h2>
           <p className="mt-3 text-white/80 max-w-3xl">
-            <strong>La preinscripción se abre el jueves 8 de octubre de 2026</strong>, durante nuestro meetup de Quantum Madrid, justo después de la visita guiada a la exposición <em>“Revolución Cuántica”</em> en Espacio Fundación Telefónica (C/ Fuencarral 3, 17:15–19:15). Ahí daremos el pistoletazo de salida y compartiremos el enlace del formulario.
+            <strong>La preinscripción ya está abierta</strong> a través de Eventbrite.
           </p>
           <p className="mt-3 text-white/80 max-w-3xl">Indica si participarás solo o en equipo y propón (opcional) un tema o problema — usaremos esta info para ayudarte a formar equipo y a priorizar mentoría.</p>
           <div className="mt-6 flex flex-wrap gap-3 items-center">
-            {registrationOpen && registerUrl ? (
-              <a className="rounded-2xl bg-[#0f62fe] px-5 py-3 font-semibold hover:bg-[#0043ce]" href={registerUrl} target="_blank" rel="noreferrer">✅ Preinscribirme</a>
-            ) : (
-              <span className="rounded-2xl bg-white/10 border border-white/20 px-5 py-3 font-semibold text-white/80">🗓️ Preinscripción — abre el 8 de octubre</span>
-            )}
-            <a className="rounded-2xl border border-white/20 px-5 py-3 font-semibold hover:bg-white/5" href={meetupUrl} target="_blank" rel="noreferrer">Apuntarme a la visita del 8 de octubre</a>
+            <a className="rounded-2xl bg-[#0f62fe] px-5 py-3 font-semibold hover:bg-[#0043ce]" href={registerUrl} target="_blank" rel="noreferrer">✅ Preinscribirme</a>
             <a className="rounded-2xl border border-white/20 px-5 py-3 font-semibold hover:bg-white/5" href="#faq">FAQ</a>
           </div>
-          <p className="mt-4 text-xs text-white/60">¿No puedes venir al meetup? Publicaremos la apertura y todas las actualizaciones en nuestras redes y canales de Quantum Madrid / Entangle Tech Hub.</p>          <div className="mt-6 flex flex-wrap gap-3 items-center">
-            <span className="rounded-2xl bg-white/10 border border-white/20 px-5 py-3 font-semibold text-white/80">🔜 Preinscripción — próximamente</span>
-            <a className="rounded-2xl border border-white/20 px-5 py-3 font-semibold hover:bg-white/5" href="#faq">FAQ</a>
-          </div>
-          <p className="mt-4 text-xs text-white/60">Anunciaremos la apertura de la preinscripción y todas las actualizaciones a través de nuestras redes y canales de Quantum Madrid / Entangle Tech Hub.</p>
+          <p className="mt-4 text-xs text-white/60">Publicaremos todas las actualizaciones a través de nuestras redes y canales de Quantum Madrid / Entangle Tech Hub.</p>
         </div>
       </section>
 
@@ -280,6 +268,9 @@ export default function Landing() {
             <div className="rounded-2xl bg-white/5 border border-white/10 h-20 flex items-center justify-center p-4">
               <img src="/logos/qiskit.png" alt="Qiskit" className="max-h-10 object-contain" />
               <span className="ml-2 text-white/80 text-sm">Qiskit</span>
+            </div>
+            <div className="rounded-2xl bg-white border border-white/10 h-20 flex items-center justify-center p-4">
+              <img src="/logos/logo_gdee_firma.png" alt="GDEE" className="max-h-12 object-contain" />
             </div>
           </div>
           <p className="mt-4 text-xs text-white/60">* Logos provisionales. Se actualizarán tras confirmación de partners.</p>
