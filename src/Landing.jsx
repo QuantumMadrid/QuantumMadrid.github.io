@@ -94,14 +94,22 @@ export default function Landing() {
       {/* Agenda */}
       <section id="agenda" className="border-t border-white/10">
         <div className="max-w-6xl mx-auto px-6 py-14">
-          <h2 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-fuchsia-400 via-violet-400 to-sky-400 bg-clip-text text-transparent">Agenda</h2>
+          <h2 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-fuchsia-400 via-violet-400 to-sky-400 bg-clip-text text-transparent">Agenda (tentativa)</h2>
           <div className="mt-6 grid md:grid-cols-3 gap-6">
             <div className="rounded-3xl bg-white/5 border border-fuchsia-500/30 ring-1 ring-fuchsia-500/20 shadow-[0_0_30px_-10px_rgba(217,70,239,0.5)] p-6 transition hover:translate-y-0.5 hover:shadow-[0_0_40px_-10px_rgba(217,70,239,0.7)] backdrop-blur">
               <h3 className="font-semibold text-fuchsia-300 flex items-center gap-2">Viernes 27 nov <span className="text-[10px] px-2 py-0.5 rounded-full bg-fuchsia-500/20 border border-fuchsia-500/30">Kickoff</span></h3>
               <ul className="mt-3 space-y-2 text-white/80 text-sm">
                 <li>👋 16:30-17:00 — Llegada y registro</li>
-                <li>17:00-17:30 — 🎤 Sesión de bienvenida</li>
-                <li>17:30-18:30 — 🎓 Keynote Quantum Madrid by Entangle</li>
+                <li>17:00-17:30 — 🎤 Sesión de bienvenida: Keynote Quantum Madrid by Entangle</li>
+                <li>
+                  17:30-18:30 — 🎯 Presentación de retos
+                  <ul className="mt-1 ml-4 space-y-1 text-white/60 text-xs">
+                    <li>17:30 — IBM Quantum</li>
+                    <li>17:45 — Universidad Politécnica de Madrid</li>
+                    <li>18:00 — Moeve</li>
+                    <li>18:15 — Pendiente de confirmación</li>
+                  </ul>
+                </li>
                 <li>18:30-19:15 — 👥 Configuración de equipos</li>
                 <li>19:15-19:30 — Cierre y networking</li>
               </ul>
@@ -110,13 +118,21 @@ export default function Landing() {
               <h3 className="font-semibold text-sky-300 flex items-center gap-2">Sábado 28 nov <span className="text-[10px] px-2 py-0.5 rounded-full bg-sky-500/20 border border-sky-500/30">Hackathon</span></h3>
               <ul className="mt-3 space-y-2 text-white/80 text-sm">
                 <li>09:00-09:30 — Recepción y desayuno</li>
-                <li>09:30-09:45 — 🎯 Presentación de retos</li>
-                <li>09:45-13:00 — 🧑‍💻 Hackathon + mentoría </li>
+                <li>
+                  09:30-10:30 — 🎓 Keynotes
+                  <ul className="mt-1 ml-4 space-y-1 text-white/60 text-xs">
+                    <li>09:30 — madri+d: EDIH Madrid Region 2.0</li>
+                    <li>09:45 — QCentroid</li>
+                    <li>10:00 — Classiq</li>
+                    <li>10:15 — Pendiente de confirmación</li>
+                  </ul>
+                </li>
+                <li>10:30-13:00 — 🧑‍💻 Hackathon + mentoría </li>
                 <li>13:00-14:00 — 🍽️ Comida</li>
                 <li>14:00-17:30 — 🧑‍💻 Hackathon + mentoría </li>
                 <li>17:30-18:00 — ☕ Café/refrescos</li>
                 <li>18:00-20:30 —🧑‍💻 Hackathon + mentoría </li>
-                <li>20:30-∞ — Espacio disponible para hackathon</li>
+                <li>20:30-00:00 — Espacio disponible para hackathon</li>
               </ul>
             </div>
             <div className="rounded-3xl bg-white/5 border border-violet-500/30 ring-1 ring-violet-500/20 shadow-[0_0_30px_-10px_rgba(139,92,246,0.5)] p-6 transition hover:translate-y-0.5 hover:shadow-[0_0_40px_-10px_rgba(139,92,246,0.7)] backdrop-blur">
@@ -124,13 +140,13 @@ export default function Landing() {
               <ul className="mt-3 space-y-2 text-white/80 text-sm">
                 <li>09:00-09:30 — Recepción y desayuno</li>
                 <li>09:30-11:00 — 🏁 Sprint final </li>
-                <li>11:00-11:20 — 🎤 Keynote Quantum Madrid by Entangle</li>
+                <li>11:00-11:20 — 🎤 Keynote: Quantum Madrid by Entangle</li>
                 <li>11:20-13:00 — 🧪 Demos, pitches, deliberación</li>
                 <li>13:00-13:30 — 🏆 Entrega de premios y cierre</li>
               </ul>
             </div>
           </div>
-          <p className="mt-4 text-xs text-white/60 italic">ℹ️ Sponsors y ponentes aún por confirmar — el horario puede modificarse por temas de espacio y logística.</p>
+          <p className="mt-4 text-xs text-white/60 italic">ℹ️ Agenda tentativa — sponsors y ponentes aún por confirmar en los huecos marcados como "Pendiente de confirmación". El horario puede modificarse por temas de espacio y logística.</p>
         </div>
       </section>
 
@@ -304,8 +320,21 @@ export default function Landing() {
             <div className="rounded-2xl bg-white border border-white/10 h-20 flex items-center justify-center p-4">
               <img src="/logos/logo_gdee_firma.png" alt="GDEE" className="max-h-12 object-contain" />
             </div>
+            {/* EDIH Madrid Region 2.0 — participación vía acuerdo con UPM, cofinanciado por la UE */}
+            <div className="rounded-2xl bg-white border border-white/10 h-20 flex items-center justify-center p-4">
+              <img src="/logos/EDIH.png" alt="EDIH Madrid Region 2.0 — Cofinanciado por la Unión Europea" className="max-h-12 object-contain" />
+            </div>
+            {/* Universidad Politécnica de Madrid */}
+            <div className="rounded-2xl bg-white border border-white/10 h-20 flex items-center justify-center p-4">
+              <img src="/logos/SFS24540.png" alt="Universidad Politécnica de Madrid" className="max-h-12 object-contain" />
+            </div>
+            {/* Fundación para el Conocimiento madri+d */}
+            <div className="rounded-2xl bg-white border border-white/10 h-20 flex items-center justify-center p-4">
+              <img src="/logos/Logo_Fundación_para_el_Conocimiento_madri+d.jpg" alt="Fundación para el Conocimiento madri+d" className="max-h-12 object-contain" />
+            </div>
           </div>
           <p className="mt-4 text-xs text-white/60">* Logos provisionales. Se actualizarán tras confirmación de partners.</p>
+          <p className="mt-2 text-xs text-white/60">Proyecto EDIH Madrid Region 2.0 (European Digital Innovation Hub), con la Universidad Politécnica de Madrid y la Fundación para el Conocimiento madri+d, cofinanciado por la Unión Europea.</p>
         </div>
       </section>
 
