@@ -307,7 +307,7 @@ export default function Landing() {
               <img src="/logos/42-madrid.png" alt="42 Madrid — Fundación Telefónica" className="max-h-12 object-contain" />
             </div>
             <div className="rounded-2xl bg-white/5 border border-white/10 h-20 flex items-center justify-center p-4">
-              <img src="/logos/qcentroid_logo_white.png" alt="Qcentroid" className="max-h-10 object-contain" />
+              <img src="/logos/qcentroid-logo-negative.png" alt="Qcentroid" className="max-h-10 object-contain" />
               <span className="ml-2 text-white/80 text-sm"></span>
             </div>
             <div className="rounded-2xl bg-white/5 border border-white/10 h-20 flex items-center justify-center p-4">
