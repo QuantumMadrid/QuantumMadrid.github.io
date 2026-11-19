@@ -332,6 +332,14 @@ export default function Landing() {
             <div className="rounded-2xl bg-white border border-white/10 h-20 flex items-center justify-center p-4">
               <img src="/logos/Logo_Fundación_para_el_Conocimiento_madri+d.jpg" alt="Fundación para el Conocimiento madri+d" className="max-h-12 object-contain" />
             </div>
+            {/* Moeve */}
+            <div className="rounded-2xl bg-white border border-white/10 h-20 flex items-center justify-center p-4">
+              <img src="/logos/moeve-logo-azul.svg" alt="Moeve" className="max-h-8 object-contain" />
+            </div>
+            {/* Classiq */}
+            <div className="rounded-2xl bg-white border border-white/10 h-20 flex items-center justify-center p-4">
+              <img src="logos/Classiq_logo_in_black_RGB_digital.svg" alt="Classiq" className="max-h-8 object-contain" />
+            </div>
           </div>
           <p className="mt-4 text-xs text-white/60">* Logos provisionales. Se actualizarán tras confirmación de partners.</p>
           <p className="mt-2 text-xs text-white/60">Proyecto EDIH Madrid Region 2.0 (European Digital Innovation Hub), con la Universidad Politécnica de Madrid y la Fundación para el Conocimiento madri+d, cofinanciado por la Unión Europea.</p>
