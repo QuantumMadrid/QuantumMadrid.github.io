@@ -99,15 +99,15 @@ export default function Landing() {
             <div className="rounded-3xl bg-white/5 border border-fuchsia-500/30 ring-1 ring-fuchsia-500/20 shadow-[0_0_30px_-10px_rgba(217,70,239,0.5)] p-6 transition hover:translate-y-0.5 hover:shadow-[0_0_40px_-10px_rgba(217,70,239,0.7)] backdrop-blur">
               <h3 className="font-semibold text-fuchsia-300 flex items-center gap-2">Viernes 27 nov <span className="text-[10px] px-2 py-0.5 rounded-full bg-fuchsia-500/20 border border-fuchsia-500/30">Kickoff</span></h3>
               <ul className="mt-3 space-y-2 text-white/80 text-sm">
-                <li>👋 16:30-17:00 — Llegada y registro</li>
-                <li>17:00-17:30 — 🎤 Sesión de bienvenida: Keynote Quantum Madrid by Entangle</li>
+                <li>16:30-17:00 — 👋 Llegada y registro</li>
+                <li>17:00-17:30 — 🎤 Bienvenida: presentación de Entangle y cómo funciona el hackathon</li>
                 <li>
-                  17:30-18:30 — 🎯 Presentación de retos
+                  17:30-18:30 — 🎯 Primeros pasos y presentación de retos
                   <ul className="mt-1 ml-4 space-y-1 text-white/60 text-xs">
-                    <li>17:30 — IBM Quantum</li>
-                    <li>17:45 — Universidad Politécnica de Madrid</li>
-                    <li>18:00 — Moeve</li>
-                    <li>18:15 — Pendiente de confirmación</li>
+                    <li>17:30 — QCentroid: primeros pasos</li>
+                    <li>17:45 — Classiq: primeros pasos</li>
+                    <li>18:00 — Moeve: presentación del reto</li>
+                    <li>18:15 — IBM Quantum: presentación de retos</li>
                   </ul>
                 </li>
                 <li>18:30-19:15 — 👥 Configuración de equipos</li>
@@ -121,10 +121,11 @@ export default function Landing() {
                 <li>
                   09:30-10:30 — 🎓 Keynotes
                   <ul className="mt-1 ml-4 space-y-1 text-white/60 text-xs">
-                    <li>09:30 — madri+d: EDIH Madrid Region 2.0</li>
-                    <li>09:45 — QCentroid</li>
+                    <li>09:30 — Universidad Politécnica de Madrid: investigación</li>
+                    <li>09:40 — madri+d: EDIH Madrid Region 2.0</li>
+                    <li>09:50 — Ayuntamiento de Madrid</li>
                     <li>10:00 — Classiq</li>
-                    <li>10:15 — Pendiente de confirmación</li>
+                    <li>10:15 — QCentroid</li>
                   </ul>
                 </li>
                 <li>10:30-13:00 — 🧑‍💻 Hackathon + mentoría </li>
@@ -146,7 +147,7 @@ export default function Landing() {
               </ul>
             </div>
           </div>
-          <p className="mt-4 text-xs text-white/60 italic">ℹ️ Agenda tentativa — sponsors y ponentes aún por confirmar en los huecos marcados como "Pendiente de confirmación". El horario puede modificarse por temas de espacio y logística.</p>
+          <p className="mt-4 text-xs text-white/60 italic">ℹ️ Agenda tentativa — el horario puede modificarse por temas de espacio y logística.</p>
         </div>
       </section>
 
